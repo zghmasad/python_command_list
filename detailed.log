@@ -1,0 +1,21 @@
+2020-04-02 08:28:43,966 - <module> - Starting
+2020-04-02 08:28:43,966 - do_something - debug message
+2020-04-02 08:28:43,966 - do_something - info message
+2020-04-02 08:28:43,966 - do_something - warn message
+2020-04-02 08:28:43,967 - do_something - error message
+2020-04-02 08:28:43,967 - do_something - critical message
+2020-04-02 08:28:43,967 - <module> - Done
+Starting
+debug message
+info message
+warn message
+error message
+critical message
+Done
+04-02-2020 08:34:32|AM [INFO] __main__.<module>: Starting
+04-02-2020 08:34:32|AM [DEBUG] __main__.do_something: debug message
+04-02-2020 08:34:32|AM [INFO] __main__.do_something: info message
+04-02-2020 08:34:32|AM [WARNING] __main__.do_something: warn message
+04-02-2020 08:34:32|AM [ERROR] __main__.do_something: error message
+04-02-2020 08:34:32|AM [CRITICAL] __main__.do_something: critical message
+04-02-2020 08:34:32|AM [INFO] __main__.<module>: Done

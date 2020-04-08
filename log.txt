@@ -1,0 +1,7 @@
+Starting
+debug message
+info message
+warn message
+error message
+critical message
+Done
