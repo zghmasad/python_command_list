@@ -5,18 +5,12 @@ from time import sleep
 
 
 
-def worker(msg):
-    print('process id:', os.getpid())
-    for i in range(0, 10):
-        print(msg, end='')
-        sleep(1)
-
-print('Starting')
-if __name__=='__main__':
-    print('process id:', os.getpid())
-    ctx = multiprocessing.get_context('spawn')
-    p = ctx.Process(target=worker, args=('A',))
-    '''or p = Process(target=worker, args=('A',),name='ali')'''
-    p.start()
-
-print('Done')
+from multiprocessing import Pool
+def worker(x):
+    print('In worker with: ', x)
+    return x * x
+def main():
+    with Pool(processes=4) as pool:
+        print(pool.map(worker, [0, 1, 2, 3, 4, 5]))
+if __name__ == '__main__':
+    main()
