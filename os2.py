@@ -1,3 +1,4 @@
+import os
 from datetime import date, datetime
 import zlib
 
@@ -13,6 +14,13 @@ print(str(x.days // 365) + ' years')
 s = b'witch which has which witches wrist watch'
 s3 = 'witch which has which witches wrist watch'
 print(type(s))
+
+print(os.stat('conf.yaml'))
+
+cur=os.getcwd()
+print(os.path.split(cur))
+print(os.path.dirname(cur))
+print(os.path.basename(cur))
 
 # compression------------------------------------------------
 t = zlib.compress(s)

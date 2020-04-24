@@ -6,3 +6,7 @@ cur=os.getcwd()
 print(os.path.split(cur))
 print(os.path.dirname(cur))
 print(os.path.basename(cur))
+
+while os.path.basename(cur):
+    cur = os.path.dirname(cur)
+    print(cur)
