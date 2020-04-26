@@ -15,12 +15,7 @@ s = b'witch which has which witches wrist watch'
 s3 = 'witch which has which witches wrist watch'
 print(type(s))
 
-print(os.stat('conf.yaml'))
 
-cur=os.getcwd()
-print(os.path.split(cur))
-print(os.path.dirname(cur))
-print(os.path.basename(cur))
 
 # compression------------------------------------------------
 t = zlib.compress(s)
@@ -76,3 +71,41 @@ strings='problem1, problem2, problem3, problem4, problem5, problem6'
 list1=strings.split(', ')
 print(list1)
 print(' and '.join(list1))
+
+
+# directories------------------------------------------------
+print(os.stat('conf.yaml'))
+
+cur=os.getcwd()
+print(os.path.split(cur))
+print(os.path.dirname(cur))
+print(os.path.basename(cur))
+def walk_path(parent_path):
+    for parent_path, directories, files in os.walk(parent_path):
+        print(f"Checking: {parent_path}")
+        for file_name in files:
+            file_path = os.path.join(parent_path, file_name)
+            last_access = os.path.getatime(file_path)
+            size = os.path.getsize(file_path)
+            print(f"File: {file_path}")
+            print(f"\tlast accessed: {last_access}")
+            print(f"\tsize: {size}")
+
+dir = os.getcwd()
+walk_path(dir)
+
+from pathlib import Path
+
+pathobj=Path.cwd()
+
+string1=pathobj.as_posix()
+
+print(type(string1))
+
+
+file_path = Path(__file__).resolve()
+parent_path = file_path.parent
+
+print(file_path)
+print(file_path.absolute())
+print(__file__)
