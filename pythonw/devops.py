@@ -1,3 +1,21 @@
+'''import argparse
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Echo your input')
+    parser.add_argument('message',
+                        help='Message to echo')
+
+    parser.add_argument('--twice', '-t',
+                        help='Do it twice',
+                        action='store_true')
+
+    args = parser.parse_args()
+
+    print(args.message)
+    if args.twice:
+        print(args.message)'''
+
 
 import argparse
 
@@ -16,6 +34,10 @@ def greet(greeting, name):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Maritime control')
 
+    parser.add_argument('--twice', '-t',
+                        help='Do it twice',
+                        action='store_true')
+
     subparsers = parser.add_subparsers(dest='func')
 
     ship_parser = subparsers.add_parser('ships',
@@ -31,7 +53,6 @@ if __name__ == '__main__':
                                help='Greeting',
                                default='Ahoy there')
     args = parser.parse_args()
-    print(args)
     if args.func == 'sailors':
         greet(args.greeting, args.name)
     elif args.command == 'list':

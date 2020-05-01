@@ -15,7 +15,7 @@ os.chdir('./today')  # change directory
 print(os.getcwd())
 print(dir(os))  # returns all module funcs
 print(help(os))  # returns all module help
-os.chdir('../')
+os.chdir('../../')
 # copy a file
 try:
     shutil.copyfile('workfile', 'archive.db')
@@ -53,5 +53,10 @@ parser.add_argument('-l', '--lines', type=int, default=10)
 args = parser.parse_args()
 print(args)
 # python top.py --lines=5 alpha.txt beta.txt
+list=args.filenames
+for file1 in list:
+    with open(file1) as f:
+        for i in range(args.lines):
+            print(f.readline(),end=' ')
 
 sys.exit()  # exits from script

@@ -85,7 +85,7 @@ turtle.done()
 import fileinput
 import glob
 
-with open('test.xml','r+') as f:
+with open('test.xml', 'r+') as f:
     print(f.name)
     print(f.mode)
     print(f.closed)

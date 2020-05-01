@@ -1,10 +1,8 @@
-import matplotlib.pyplot as pyplot
 import numpy
 
 # Import matplotlib colour map
-from matplotlib import cm as colourmap
+from pythonw.matplotlib import cm as colourmap
 # Required for £D Projections
-from mpl_toolkits.mplot3d import Axes3D
 # Provide access to numpy functions
 
 
