@@ -1,0 +1,28 @@
+[INFO  - 2020-05-09T10:59:20.462Z] GhostDriver - Main - running on port 2267
+[INFO  - 2020-05-09T10:59:22.560Z] Session [23af6650-91e4-11ea-b3a1-1109db94c3f9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-05-09T10:59:22.560Z] Session [23af6650-91e4-11ea-b3a1-1109db94c3f9] - page.customHeaders:  - {}
+[INFO  - 2020-05-09T10:59:22.560Z] Session [23af6650-91e4-11ea-b3a1-1109db94c3f9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-05-09T10:59:22.560Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 23af6650-91e4-11ea-b3a1-1109db94c3f9
+[ERROR - 2020-05-09T10:59:37.450Z] Session [23af6650-91e4-11ea-b3a1-1109db94c3f9] - page.onError - msg: TypeError: undefined is not an object (evaluating 't.prototype')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-05-09T10:59:37.450Z] Session [23af6650-91e4-11ea-b3a1-1109db94c3f9] - page.onError - stack:
+  r (https://www.tradingview.com/static/bundles/vendors.23dba366daa188f55eb9.js:217)
+  (anonymous function) (https://www.tradingview.com/static/bundles/technicals.8164be57f6d9258dd598.js:75)
+  Wc1E (https://www.tradingview.com/static/bundles/technicals.8164be57f6d9258dd598.js:75)
+  b (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:11)
+  8Ttg (https://www.tradingview.com/static/bundles/technicals.8164be57f6d9258dd598.js:48)
+  b (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:11)
+  sjdn (https://www.tradingview.com/static/bundles/technicals.8164be57f6d9258dd598.js:109)
+  b (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:11)
+  QMV+ (https://www.tradingview.com/static/bundles/technicals.8164be57f6d9258dd598.js:69)
+  b (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:11)
+  7kLj (https://www.tradingview.com/static/bundles/technicals.8164be57f6d9258dd598.js:44)
+  b (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:11)
+  d (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:1)
+  a (https://www.tradingview.com/static/bundles/runtime.d5dbe238758bc558924d.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-05-09T10:59:38.656Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1589021978599
+
+  phantomjs://platform/console++.js:263 in error
