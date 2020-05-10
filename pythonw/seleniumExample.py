@@ -10,3 +10,4 @@ search_box.submit()
 with open('page.html', 'w') as f:
     f.write(driver.page_source)
 
+print(0)
