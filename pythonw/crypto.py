@@ -11,7 +11,6 @@ m.update(bsecret)
 print(m.digest())
 print(hashlib.md5(bsecret).digest())
 
-
 from cryptography.fernet import Fernet
 
 key = Fernet.generate_key()
@@ -22,12 +21,11 @@ f = Fernet(key)
 
 message = b"Secrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go hereSecrets go here"
 
-
 encrypted = f.encrypt(message)
 
 print(encrypted)
 print(f.decrypt(encrypted))
-print(sys.getsizeof(message),sys.getsizeof(encrypted))
+print(sys.getsizeof(message), sys.getsizeof(encrypted))
 
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.backends import default_backend

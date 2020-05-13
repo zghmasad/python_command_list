@@ -1,5 +1,4 @@
 from openpyxl import Workbook, load_workbook
-
 wb = Workbook()
 ws = wb.active  # get current active sheet
 print(ws)

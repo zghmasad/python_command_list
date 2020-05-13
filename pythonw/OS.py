@@ -52,7 +52,6 @@ parser.add_argument('filenames', nargs='+')
 parser.add_argument('-l', '--lines', type=int, default=10)
 args = parser.parse_args()
 print(args)
-# python top.py --lines=5 alpha.txt beta.txt
 list=args.filenames
 for file1 in list:
     with open(file1) as f:

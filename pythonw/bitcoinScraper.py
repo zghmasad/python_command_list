@@ -1,6 +1,5 @@
 from time import sleep
 import urllib
-
 from bs4 import BeautifulSoup
 import requests
 
@@ -11,7 +10,6 @@ while True:
     print(findlist[5].get_text())
     print(findlist[8].get_text())
     sleep(10)
-
 '''#req = requests.get('https://www.tradingview.com/symbols/BTCUSD/technicals/')
 #print(req.content)
 url=r'https://www.tradingview.com/symbols/BTCUSD/technicals/'
