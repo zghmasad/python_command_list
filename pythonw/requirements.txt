@@ -1,0 +1,10 @@
+django
+pandas
+numpy
+postgres
+pymysql
+beautifulsoup4
+requests
+cryptography
+openpyxl
+selenium
