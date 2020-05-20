@@ -6,4 +6,4 @@ def prepend_to_file(file,str1):
         fa.write(str(str1)+'\n')
         fa.writelines(data[:-1])
         
-prepend_to_file('pythonw/test2.xml','ali sayfi5')
+# prepend_to_file('pythonw/test2.xml','ali sayfi5')
