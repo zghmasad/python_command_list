@@ -5,7 +5,6 @@ from time import sleep
 
 polo = Poloniex()
 
-
 while True:
     start_time = time.time()
     dic = polo('returnTicker')
