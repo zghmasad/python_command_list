@@ -17,6 +17,22 @@ def probneg(list, amount):
             count += 1
     return count, count / len(list)
 
+
+def countlist(list,amount):
+    list2=[]
+    for i in list:
+        if i > amount:
+            list2.append(list.index(i))
+    return list2
+
+def countlistneg(list,amount):
+    list2=[]
+    for i in list:
+        if i < amount:
+            list2.append(list.index(i))
+    return list2
+
+
 # polo = Poloniex()
 # pairsAll=polo.returnOrderBook(currencyPair='USDT_BTC',depth=100)
 # pairs=pairsAll['bids']
@@ -98,15 +114,22 @@ def devi(list1, count):
     return l, min1, max1, (mean1 / len(l))
 
 
-
+print('creating list ...')
 list5 = file_to_list('btc')
-# listp, min1, max1, mean1 = devi(list5, 120)
+listp, min1, max1, mean1 = devi(list5, 120)
 # print(min1, max1, mean1)
 # c,p=prob(listp, .6)
 # print(float(p),c)
 # c,p=probneg(listp, -.6)
 # print(float(p),c)
+print('list created!')
+listxx=countlistneg(listp,-3.7)
+print('new list')
+print(listxx)
+listx = [i for i in range(len(list5))]
 
+pyplot.plot(listx, list5, 'g')
+pyplot.show()
 
 # xlsx------------------------------------------------------------
 # wk=openpyxl.load_workbook('Book1.xlsx')
